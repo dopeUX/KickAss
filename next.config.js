@@ -2,9 +2,9 @@
 const nextConfig = {
   reactStrictMode: false,
   // target: 'serverless',
-  env: {
-    ADDRESS: process.env.CONTRACT_ADDRESS,
-  },
+  // env: {
+  //   ADDRESS: process.env.CONTRACT_ADDRESS,
+  // },
 }
 
 module.exports = nextConfig
