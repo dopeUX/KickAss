@@ -18,7 +18,7 @@ export default function CampaignIndex(props){
            <Button  floated="right" content="Create Campaign" icon="add circle" primary={true}/>
            </a>
           </Link>
-          {/* <Card.Group items={props.campaigns.map(address=>{
+          <Card.Group items={props.campaigns.map(address=>{
             return {
                 header:address,
                 description:(
@@ -27,7 +27,7 @@ export default function CampaignIndex(props){
                 </Link>),
                 fluid:true
             }
-        })}/> */}
+        })}/>
          
          </Layout>  
         </div>
@@ -35,7 +35,6 @@ export default function CampaignIndex(props){
 }
 
 CampaignIndex.getInitialProps = async() =>{
-    // const campaigns = await factory.methods.getDeployedCampaigns().call();
-    // return {campaigns}
-    return {}
+    const campaigns = await factory.methods.getDeployedCampaigns().call();
+    return {campaigns}
 }
