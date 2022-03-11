@@ -65,15 +65,7 @@ contract Campaign {
         newRequest.recipient = recipient;
         newRequest.complete = false;
         newRequest.approvalCount = 0;
-        // Request memory newRequest = Request({
-        //     description: description,
-        //     value: value,
-        //     recipient: recipient,
-        //     complete: false,
-        //     approvalCount: 0
-        // });
-
-        // requests.push(newRequest);
+      
     }
 
     function approveRequest(uint256 index) public {
