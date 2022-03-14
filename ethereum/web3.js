@@ -15,7 +15,7 @@ else{
      console.log('on server');
      console.log('server started');
      const provider = new Web3.providers.HttpProvider(
-     'https://rinkeby.infura.io/v3/2ebf91b29af74714a3ac9d271adcf3b6' 
+     process.env.INFURA_API
    );
    web3 = new Web3(provider);
 }
