@@ -2,8 +2,8 @@ const HDWalletProvider = require('truffle-hdwallet-provider');
 const Web3 = require('web3');
 const compiledFactory = require('./build/CampaignFactory.json');
 const provider = new HDWalletProvider(
-    'actress general ankle broom elegant whip broken narrow pumpkin dose plunge note',
-    'https://rinkeby.infura.io/v3/2ebf91b29af74714a3ac9d271adcf3b6'
+    'process.env.PRIVATE_KEY',
+    'process.env.INFURA_API'
   );
 
 const web3 = new Web3(provider);
