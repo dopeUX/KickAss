@@ -4,7 +4,8 @@ const nextConfig = {
   target: 'serverless',
   env: {
     ADDRESS: process.env.CONTRACT_ADDRESS,
-    INFURA_API: process.env.INFURA_API
+    INFURA_API: process.env.INFURA_API,
+    PRIVATE_KEY :process.env.PRIVATE_KEY
   },
 }
 
